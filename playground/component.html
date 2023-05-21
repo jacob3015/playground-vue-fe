@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Components</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <div id="app">
+    <app-header></app-header>
+    <app-content></app-content>
+    <app-footer></app-footer>
+  </div>
+
+  <script>
+    Vue.component('app-header', {
+      template: '<h1>header</h1>'
+    });
+    Vue.component('app-content', {
+      template: '<div>contents</div>'
+    });
+    Vue.component('app-footer', {
+      template: '<footer>footer</footer>'
+    });
+    new Vue({
+      el: '#app'
+    });
+  </script>
+</body>
+</html>
