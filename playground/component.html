@@ -13,18 +13,23 @@
   </div>
 
   <script>
-    Vue.component('app-header', {
-      template: '<h1>header</h1>'
-    });
-    Vue.component('app-content', {
-      template: '<div>contents</div>'
-    });
-    Vue.component('app-footer', {
-      template: '<footer>footer</footer>'
-    });
-    new Vue({
-      el: '#app'
-    });
+      /**
+       * 전역 컴포넌트
+       * Vue 인스턴스의 component 함수를 사용해 전역 컴포넌트를 생성할 수 있다.
+       * 생성한 전역 컴포넌트는 html 태그로 등록할 수 있다.
+       */
+      Vue.component('app-header', {
+          template: '<h1>header</h1>'
+      });
+      Vue.component('app-content', {
+          template: '<div>contents</div>'
+      });
+      Vue.component('app-footer', {
+          template: '<footer>footer</footer>'
+      });
+      new Vue({
+          el: '#app'
+      });
   </script>
 </body>
 </html>
